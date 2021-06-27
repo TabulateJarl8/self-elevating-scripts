@@ -1,6 +1,6 @@
 if [ "$EUID" != 0 ]; then
 	sudo "$0" "$@"
-	echo $?
+	exit $?
 fi
 
 # Code goes here
